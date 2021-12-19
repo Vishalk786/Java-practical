@@ -1,0 +1,31 @@
+import java.io.*;
+class Arithmetic
+ {
+  public static void main(String arg[])
+  {
+   int num1,num2;
+   int sum,subtract,multiply,division,remainder;
+   DataInputStream r=new DataInputStream(System.in);
+   try
+   {
+   System.out.println("Enter number1:");
+   num1=Integer.parseInt(r.readLine());
+   System.out.println("Enter number2:");
+   num2=Integer.parseInt(r.readLine());
+   sum=num1+num2;
+   subtract=num1-num2;
+   multiply=num1*num2;
+   division=num1/num2;
+   remainder=num1%num2;
+   System.out.println("Result of addition is:"+sum);
+   System.out.println("Result of subtraction is:"+subtract);
+   System.out.println("Result of multiplication is:"+multiply);
+   System.out.println("Result of division is:"+division);
+   System.out.println("Result of remainder is:"+remainder);
+   }
+   catch(Exception ie)
+   {
+   System.out.println("You are have entered a warong value:");
+   }
+  }
+  }
